@@ -8,22 +8,24 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="./js/action.js"></script>
     <title>Página de Start BCW18</title>
 </head>
 
-<body style="font-family: roboto;">
+<body>
     <header>
-        <nav>
-            <a href="#somos">Quem somos neste <strong>Bcw18</strong></a> |
-            <a href="#cronograma">Cronograma do <strong>Bcw18</strong> </a> |
-            <a href="#dicas">Dicas do team <strong>Bcw18</strong></a> |
-            <a href="trabalho">Orientações de trabalho como Dev</a> |
-        </nav>
+        <ul>
+            <li><a href="#cadastro">Cadastro Bcw18</a></li>
+            <li><a href="#trajetoria">Trajetória</a></li>
+            <li><a href="#dicas">Dicas do team</a></li>
+            <li><a href="trabalho">Orientações de trabalho como Dev</a></li>
+
+        </ul>
     </header>
     <main>
-        <div style="width: 650px;">
+        <div class="divisorbase" id="trajetoria">
+            <h1> <strong>Trajetória de sucesso</strong> </h1>
             <table>
                 <tr>
                     <th> <strong>FASE</strong></th>
@@ -60,16 +62,74 @@
                     <td>dinamica em grupo com a realização de teste e acolhimento</td>
                     <td>
                         <figure>
-                        <img src="./img/imagem1.jpg" alt="Jornada de estudos" width="180px" height="180px">
+                            <img src="./img/imagem1.jpg" alt="Jornada de estudos" width="180px" height="180px">
                             <figcaption>Fig.3 - Dança da vitória .</figcaption>
-                            </figure>
+                        </figure>
                     </td>
                 </tr>
 
             </table>
 
-            <h1> <strong>Trajetória de sucesso</strong> </h1>
+
             <hr>
+        </div>
+        <div class="divisorbase" id="cadastro">
+            <form action="#" method="">
+                <div>
+                    <input type="hidden" id="id">
+                </div>
+                <div>
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" placeholder="Entre com seu nome">
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Entre com seu e-mail">
+                </div>
+                <div>
+                    <label for="nascimento">Data de nascimento</label>
+                    <input type="date" id="nascimento">
+                </div>
+                <div>
+                    <input type="checkbox" id="deficiencia">
+                    <label for="deficiencia">Deficiência: </label>
+                </div>
+                <div>
+                    <label for="senha">Senha: </label>
+                    <input type="password" id="senha" placeholder="Escolha uma senha" maxlength="14">
+                </div>
+                <div>
+                    <label for="escolaridade">Escolaridade</label>
+                    <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="F1"> fundamental <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="M1"> médio <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="S1"> Superior <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="B1"> Bacharelado <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="T1"> Tecnologo <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="L1"> Licenciado <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="P1"> Pós graduado<br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="M1"> Mestrado <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="D1"> Doutorado<br>
+                </div>
+                <div>
+                    <label for="experiencia">Qual sua experiência na programação? </label>
+                    <input type="range" id="experiencia" min="0" max="50" oninput="display.value=value"
+                        onchange="display.value=value">
+                    <input type="text" id="display" value="0" oninput="experiencia.value=value"
+                        onchange="experiencia.value=value" maxlength="3" size="3">
+
+                </div>
+                <div>
+                    <label for="descricao">Descrição da experiência:</label>
+                    <br>
+                    <textarea id="descricao" cols="70" rows="5"
+                        placeholder="Descreva sua experiência da área de programação"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="limpar">
+                </div>
+            </form>
         </div>
     </main>
     <footer>
