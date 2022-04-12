@@ -51,7 +51,7 @@ body{
 }
 @media screen and (max-width: 600px){
     .column{
-        width:100%
+        width:100%;
     }
 }
 div.gallery{
@@ -60,7 +60,7 @@ div.gallery{
 }
 
 div.gallery:hover{
-    border: 1px #777;
+    border: 1px solid #777;
 }
 div.gallery img{
     width: 100%;
