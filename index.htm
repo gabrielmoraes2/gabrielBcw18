@@ -14,7 +14,12 @@
 </head>
 
 <body>
-    <header>
+    <div class="header">
+        <img src="./img/logo.dark.png" alt="Logo da soulcode" srcset="Imagem do Logo">
+        <h1>Bootcamp de java spring com angular web [19]</h1>
+        <p>Turma de desenvolvimento Web Full Stack da Soulcode Academy</p>
+    </div>
+    <header class="topnav">
         <ul>
             <li><a href="#cadastro">Cadastro Bcw18</a></li>
             <li><a href="#trajetoria">Trajetória</a></li>
@@ -23,55 +28,47 @@
         </ul>
     </header>
     <main>
-        <div class="divisorbase" id="trajetoria">
-            <h1> <strong>Trajetória de sucesso</strong> </h1>
-            <table>
-                <tr>
-                    <th> <strong>FASE</strong></th>
-                    <th><strong>Descrição</strong></th>
-                </tr>
-                <tr>
-                    <td><strong>Primeira</strong></td>
-                    <td>inscrição no site oficial, execução do teste de logica, curso da trilha
-                        zero e montagem do Pitch</td>
-                    <td>
+        <div class="row" id="trajetoria">
+            <div class="column">
+                <h1>Primeira fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="./img/imagem2.jpg">
+                        <img src="./img/imagem2.jpg" alt="Fase 1">
+                    </a>
+                    <div class="desc">
+                        inscrição no site oficial, execução do teste de logica, curso da trilha
+                        zero e montagem do Pitch
+                    </div>
 
-                        <figure>
-                            <img src="./img/imagem2.jpg" alt="Testes de lógica para seleção" width="180px"
-                                height="180px">
-                            <figcaption>Fig.1 - Testes de lógica para seleção.</figcaption>
-                        </figure>
-                    </td>
-
-                </tr>
-                <tr>
-                    <td><strong>Segunda</strong></td>
-                    <td>testes trilha zero e enrevista com recrutador para avaliação de bolsa,
+                </div>
+            </div>
+            <div class="column">
+                <h1>Segunda fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="./img/imagem3.jpg">
+                        <img src="./img/imagem3.jpg" alt="Fase 2">
+                    </a>
+                    <div class="desc">
+                        testes trilha zero e enrevista com recrutador para avaliação de bolsa,
                         nesta fase se analisa
-                        a elegibilidade para bolsa de estudos perante os clientes e o candidato</td>
-                    <td>
-                        <figure>
-                            <img src="./img/imagem3.jpg" alt="Jornada de estudos" width="180px" height="180px">
-                            <figcaption>Fig.2 - Jornada de estudos.</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Terceira</strong></td>
-                    <td>dinamica em grupo com a realização de teste e acolhimento</td>
-                    <td>
-                        <figure>
-                            <img src="./img/imagem1.jpg" alt="Jornada de estudos" width="180px" height="180px">
-                            <figcaption>Fig.3 - Dança da vitória .</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-
-            </table>
-
-
-            <hr>
+                        a elegibilidade para bolsa de estudos perante os clientes e o candidato
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h1>Terceira fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="./img/imagem1.jpg">
+                        <img src="./img/imagem1.jpg" alt="Fase 3">
+                    </a>
+                    <div class="desc">
+                        dinamica em grupo com a realização de teste e acolhimento
+                    </div>
+                </div>
+            </div>
         </div>
+        <h1> <strong>Trajetória de sucesso</strong> </h1>
+        <hr>
         <div class="divisorbase" id="cadastro">
             <form action="#" method="">
                 <div>

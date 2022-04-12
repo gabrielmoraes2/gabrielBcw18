@@ -5,12 +5,64 @@ body{
     border: 0;
 }
 
-.divisorbase{
-    background-color:rgb(190, 248, 228);
-    width: 700px;
-    margin-top: 80px;
+*{
+    box-sizing: border-box;
+}
+.header{
+    background-color:#80deea ;
+    padding: 20px;
+    text-align: center;
+    color: azure;
+    font-weight: bold;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: #fff176;
+
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: #5223c0;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #fff176;
+    color: rgb(27, 10, 100);
+}
+
+.topnav ul{
+    list-style-type: none;
+
+}
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 15px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px){
+    .column{
+        width:100%
+    }
+}
+div.gallery{
     margin-left: auto;
     margin-right: auto;
-    padding: 25px;
-    border-radius: 15px;
+}
+
+div.gallery:hover{
+    border: 1px #777;
+}
+div.gallery img{
+    width: 100%;
+    height: auto;
 }
