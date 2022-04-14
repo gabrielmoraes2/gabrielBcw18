@@ -163,6 +163,24 @@ input[type="reset"]:hover {
   font-weight: bold;
 }
 
+.footerSocial {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.footerSocial > div {
+  background-color: #80deea;
+  width: 100px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.iconeImg img {
+  width: 50px;
+  height: 50px;
+}
+
 @media screen and (max-width: 400px) {
   .leftColumn,
   .rightColumn {
